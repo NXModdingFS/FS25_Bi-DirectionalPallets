@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<texts>
+		<text name="input_BIDIR_TOGGLE_PULL" text="Bi-Dir: Toggle Pull-Fill (load tool from pallets)"/>
+		<text name="input_BIDIR_TOGGLE_PUSH" text="Bi-Dir: Toggle Push-Fill (empty tool into pallets)"/>
+		<text name="input_BIDIR_CYCLE_PICK"  text="Bi-Dir: Cycle Pallet Selection"/>
+
+		<text name="action_BIDIR_PULL_ON"    text="Pull-fill from pallets (Enabled)"/>
+		<text name="action_BIDIR_PULL_OFF"   text="Pull-fill from pallets (Disabled)"/>
+		<text name="action_BIDIR_PUSH_ON"    text="Push-fill into pallets (Enabled)"/>
+		<text name="action_BIDIR_PUSH_OFF"   text="Push-fill into pallets (Disabled)"/>
+		<text name="action_BIDIR_CYCLE_PICK" text="Cycle Pallet Selection"/>
+
+		<text name="bidir_menu_section_title"     text="Bi-Directional Pallets"/>
+		<text name="bidir_menu_overlay"           text="Pallet Selection Overlay"/>
+		<text name="bidir_menu_overlay_tooltip"   text="Show floating fill-level labels above pallets near a tool. Required for cycling pallet selection."/>
+		<text name="bidir_setting_overlay_on"     text="On"/>
+		<text name="bidir_setting_overlay_off"    text="Off"/>
+		<text name="bidir_menu_push_rate"            text="Push-Fill Rate"/>
+		<text name="bidir_menu_push_rate_tooltip"    text="Litres per second transferred from the tool into nearby pallets while push-fill is on. Higher rates fill faster but feel less realistic."/>
+		<text name="bidir_menu_multi_pallet"         text="Multi-Pallet Mode"/>
+		<text name="bidir_menu_multi_pallet_tooltip" text="When on, push-fill spreads transfer across every eligible pallet at once, and pull-fill drains other compatible pallets in parallel with the picked one. When off, transfers go one pallet at a time."/>
+		<text name="bidir_setting_multi_on"          text="On"/>
+		<text name="bidir_setting_multi_off"         text="Off"/>
+	</texts>
+</l10n>

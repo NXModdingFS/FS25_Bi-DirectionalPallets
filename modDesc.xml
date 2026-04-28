@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="99">
+	<author>NX Modding</author>
+	<version>1.0.0.0</version>
+	<title>
+		<en>Bi-Directional Pallets</en>
+		<de>Bi-Direktionale Paletten</de>
+		<fr>Palettes Bi-Directionnelles</fr>
+		<ru>Двунаправленные Поддоны</ru>
+	</title>
+	<description>
+<en><![CDATA[Bi-Directional Pallets turns every refillable tool (seeders, sprayers, trailers) into a two-way pallet hub. Empty into a tool from a stack of pallets, OR pour leftover product back into empty pallets and big-bags so nothing is wasted.
+
+Features:
+- Pull-fill: chain-load a tool from any number of pallets / big-bags with a single command
+- Push-fill: top up nearby empty/partial pallets straight from your tank
+- Per-tool toggles for both directions, persisted with the savegame
+- On-screen overlay shows fill levels and selection order
+- Manual selection lets you pick which item to start the chain from
+- Multiplayer aware - all transfers are server-authoritative
+]]></en>
+<de><![CDATA[Bi-Direktionale Paletten macht aus jedem nachfüllbaren Werkzeug (Sämaschinen, Spritzen, Anhänger) einen Zwei-Wege-Palettenknoten. Leere mehrere Paletten in ein Gerät - oder gieße Reste zurück in leere Paletten und Big-Bags.
+
+Funktionen:
+- Pull-Fill: Mehrere Paletten / Big-Bags mit einem Befehl in das Gerät kettenladen
+- Push-Fill: Nachfüllen umliegender leerer Paletten direkt aus dem Tank
+- Pro-Gerät Schalter für beide Richtungen, im Spielstand gespeichert
+- Bildschirm-Anzeige der Füllstände und Reihenfolge
+- Manuelle Auswahl des Startobjekts der Kette
+- Mehrspieler-fähig - alle Transfers serverseitig
+]]></de>
+<fr><![CDATA[Palettes Bi-Directionnelles transforme chaque outil rechargeable (semoirs, pulvérisateurs, remorques) en hub de palettes bidirectionnel. Videz plusieurs palettes dans l'outil OU reversez le produit restant dans des palettes vides.
+
+Caractéristiques:
+- Pull-Fill: chaîner le remplissage depuis plusieurs palettes / big-bags via une seule commande
+- Push-Fill: remplir des palettes vides / partielles à proximité depuis le réservoir
+- Bascules par outil pour les deux sens, sauvegardées avec la partie
+- Affichage des niveaux et de l'ordre de sélection
+- Sélection manuelle du premier élément de la chaîne
+- Compatible multijoueur - transferts côté serveur
+]]></fr>
+<ru><![CDATA[Двунаправленные Поддоны превращают любой инструмент с заправкой в двусторонний узел. Заправляйтесь сразу с нескольких поддонов ИЛИ сливайте остатки обратно в пустые поддоны и биг-бэги.
+
+Возможности:
+- Pull-Fill: цепная заправка с нескольких поддонов одной командой
+- Push-Fill: дозаправка соседних поддонов прямо из бака
+- Переключатели для каждого направления, сохраняются в игре
+- Экранная индикация уровней и порядка
+- Ручной выбор первого элемента цепи
+- Сетевой режим - все транзакции на сервере
+]]></ru>
+	</description>
+
+	<multiplayer supported="true" />
+	<iconFilename>icon_BiDirectionalPallets.dds</iconFilename>
+	<extraSourceFiles>
+		<sourceFile filename="register.lua" />
+		<sourceFile filename="core/BiDirSettings.lua" />
+	</extraSourceFiles>
+
+	<l10n filenamePrefix="language/l10n" />
+
+	<actions>
+		<action name="BIDIR_TOGGLE_PULL" category="VEHICLE"/>
+		<action name="BIDIR_TOGGLE_PUSH" category="VEHICLE"/>
+		<action name="BIDIR_CYCLE_PICK"  category="VEHICLE"/>
+	</actions>
+</modDesc>
